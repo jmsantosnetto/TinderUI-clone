@@ -13,6 +13,14 @@
 		8229D8F325325B2200080B52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8229D8F125325B2200080B52 /* Main.storyboard */; };
 		8229D8F525325B2400080B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8229D8F425325B2400080B52 /* Assets.xcassets */; };
 		8229D8F825325B2400080B52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8229D8F625325B2400080B52 /* LaunchScreen.storyboard */; };
+		8229D90225325C0300080B52 /* CombineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D90125325C0300080B52 /* CombineVC.swift */; };
+		8229D9062532630A00080B52 /* CombineCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D9052532630A00080B52 /* CombineCardView.swift */; };
+		8229D90B2532650800080B52 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D90A2532650800080B52 /* UIView.swift */; };
+		8229D90F253268A700080B52 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D90E253268A700080B52 /* UILabel.swift */; };
+		8229D91425326EB000080B52 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D91325326EB000080B52 /* UserService.swift */; };
+		8229D91825326F1600080B52 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D91725326F1600080B52 /* User.swift */; };
+		8229D91D253274C800080B52 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D91C253274C800080B52 /* UIImageView.swift */; };
+		8229D92025327AEA00080B52 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D91F25327AEA00080B52 /* UIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		8229D8F425325B2400080B52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8229D8F725325B2400080B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8229D8F925325B2400080B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8229D90125325C0300080B52 /* CombineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineVC.swift; sourceTree = "<group>"; };
+		8229D9052532630A00080B52 /* CombineCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineCardView.swift; sourceTree = "<group>"; };
+		8229D90A2532650800080B52 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		8229D90E253268A700080B52 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		8229D91325326EB000080B52 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		8229D91725326F1600080B52 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8229D91C253274C800080B52 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		8229D91F25327AEA00080B52 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,11 @@
 		8229D8EA25325B2200080B52 /* TinderUIClone */ = {
 			isa = PBXGroup;
 			children = (
+				8229D91625326ECB00080B52 /* Model */,
+				8229D91225326E6F00080B52 /* Service */,
+				8229D909253264D800080B52 /* Lib */,
+				8229D904253262F300080B52 /* View */,
+				8229D90025325BEF00080B52 /* Controller */,
 				8229D8EB25325B2200080B52 /* AppDelegate.swift */,
 				8229D8ED25325B2200080B52 /* SceneDelegate.swift */,
 				8229D8EF25325B2200080B52 /* ViewController.swift */,
@@ -65,6 +86,49 @@
 				8229D8F925325B2400080B52 /* Info.plist */,
 			);
 			path = TinderUIClone;
+			sourceTree = "<group>";
+		};
+		8229D90025325BEF00080B52 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8229D90125325C0300080B52 /* CombineVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8229D904253262F300080B52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8229D9052532630A00080B52 /* CombineCardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8229D909253264D800080B52 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				8229D90A2532650800080B52 /* UIView.swift */,
+				8229D90E253268A700080B52 /* UILabel.swift */,
+				8229D91C253274C800080B52 /* UIImageView.swift */,
+				8229D91F25327AEA00080B52 /* UIButton.swift */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		8229D91225326E6F00080B52 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8229D91325326EB000080B52 /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8229D91625326ECB00080B52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8229D91725326F1600080B52 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +201,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8229D91425326EB000080B52 /* UserService.swift in Sources */,
+				8229D90225325C0300080B52 /* CombineVC.swift in Sources */,
 				8229D8F025325B2200080B52 /* ViewController.swift in Sources */,
+				8229D9062532630A00080B52 /* CombineCardView.swift in Sources */,
+				8229D90F253268A700080B52 /* UILabel.swift in Sources */,
+				8229D91825326F1600080B52 /* User.swift in Sources */,
+				8229D91D253274C800080B52 /* UIImageView.swift in Sources */,
 				8229D8EC25325B2200080B52 /* AppDelegate.swift in Sources */,
+				8229D92025327AEA00080B52 /* UIButton.swift in Sources */,
+				8229D90B2532650800080B52 /* UIView.swift in Sources */,
 				8229D8EE25325B2200080B52 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
