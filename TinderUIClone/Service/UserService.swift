@@ -33,7 +33,10 @@ class UserService {
     User(id: 120, name: "Maria Virginia", age: 18, match: false, description: "Adoro balada", image: "pessoa-20")
   ]
   
-  func findUsers () -> [User] {
-    return self.users
+    func findUsers (completion: @escaping ([User]?, Error?) -> ()) {
+    
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            completion(self.users, nil)
+        }
   }
 }

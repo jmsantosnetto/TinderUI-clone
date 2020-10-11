@@ -1,5 +1,5 @@
 //
-//  CombineVC.swift
+//  CombineViewController.swift
 //  TinderUIClone
 //
 //  Created by Jose Martins on 10/10/20.
@@ -13,7 +13,7 @@ enum CardAction {
     case deslike
 }
 
-class CombineVC: UIViewController {
+class CombineViewController: UIViewController {
     var users: [User] = []
     
     let profileButton: UIButton = .iconHeader(named: "icone-perfil")
@@ -29,14 +29,23 @@ class CombineVC: UIViewController {
         navigationController?.navigationBar.isHidden = true
         view.backgroundColor = UIColor.systemGroupedBackground
         
+        let loading = Loading(frame: view.frame)
+        view.insertSubview(loading, at: 0)
+        
         self.findUsers()
         self.addHeader()
-        self.addCards()
-        self.addFooter()
     }
     
     func findUsers() {
-        self.users = UserService.instance.findUsers()
+        UserService.instance.findUsers{ (users, err) in
+            if let users = users {
+                DispatchQueue .main .async {
+                    self.users = users
+                    self.addCards()
+                    self.addFooter()
+                }
+            }
+        }
     }
     
     func addHeader() {
@@ -87,13 +96,17 @@ class CombineVC: UIViewController {
             
             card.addGestureRecognizer(gesture)
             
-            view.insertSubview(card, at: 0)
+            view.insertSubview(card, at: 1)
         }
     }
     
     func verifyMatch(user: User) {
         if user.match {
-            print("It's a Match!")
+            let matchViewController = MatchViewController()
+            matchViewController.user = user
+            matchViewController.modalPresentationStyle = .fullScreen
+            
+            self.present(matchViewController, animated: true, completion: nil)
         }
     }
     

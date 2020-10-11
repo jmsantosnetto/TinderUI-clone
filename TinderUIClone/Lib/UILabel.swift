@@ -8,16 +8,18 @@
 import UIKit
 
 extension UILabel   {
-    static func textLabel(_ size: CGFloat, textColor: UIColor = .black, numberOfLines: Int = 1) -> UILabel {
+    static func textLabel(_ size: CGFloat, textColor: UIColor = .black,alignment: NSTextAlignment = .natural, numberOfLines: Int = 1) -> UILabel {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: size)
+        label.textAlignment = alignment
         label.textColor = textColor
         label.numberOfLines = numberOfLines
         return label
     }
     
-    static func textBoldLabel(_ size: CGFloat, textColor: UIColor = .black, numberOfLines: Int = 1) -> UILabel {
+    static func textBoldLabel(_ size: CGFloat, textColor: UIColor = .black, alignment: NSTextAlignment = .natural, numberOfLines: Int = 1) -> UILabel {
         let label = UILabel()
+        label.textAlignment = alignment
         label.font = UIFont.boldSystemFont(ofSize: size)
         label.textColor = textColor
         label.numberOfLines = numberOfLines

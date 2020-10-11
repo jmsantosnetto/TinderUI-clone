@@ -13,7 +13,7 @@
 		8229D8F325325B2200080B52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8229D8F125325B2200080B52 /* Main.storyboard */; };
 		8229D8F525325B2400080B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8229D8F425325B2400080B52 /* Assets.xcassets */; };
 		8229D8F825325B2400080B52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8229D8F625325B2400080B52 /* LaunchScreen.storyboard */; };
-		8229D90225325C0300080B52 /* CombineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D90125325C0300080B52 /* CombineVC.swift */; };
+		8229D90225325C0300080B52 /* CombineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D90125325C0300080B52 /* CombineViewController.swift */; };
 		8229D9062532630A00080B52 /* CombineCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D9052532630A00080B52 /* CombineCardView.swift */; };
 		8229D90B2532650800080B52 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D90A2532650800080B52 /* UIView.swift */; };
 		8229D90F253268A700080B52 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D90E253268A700080B52 /* UILabel.swift */; };
@@ -21,6 +21,8 @@
 		8229D91825326F1600080B52 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D91725326F1600080B52 /* User.swift */; };
 		8229D91D253274C800080B52 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D91C253274C800080B52 /* UIImageView.swift */; };
 		8229D92025327AEA00080B52 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D91F25327AEA00080B52 /* UIButton.swift */; };
+		8229D9232532996B00080B52 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D9222532996B00080B52 /* Loading.swift */; };
+		8229D9272532A12400080B52 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D9262532A12400080B52 /* MatchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +34,7 @@
 		8229D8F425325B2400080B52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8229D8F725325B2400080B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8229D8F925325B2400080B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8229D90125325C0300080B52 /* CombineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineVC.swift; sourceTree = "<group>"; };
+		8229D90125325C0300080B52 /* CombineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineViewController.swift; sourceTree = "<group>"; };
 		8229D9052532630A00080B52 /* CombineCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineCardView.swift; sourceTree = "<group>"; };
 		8229D90A2532650800080B52 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		8229D90E253268A700080B52 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		8229D91725326F1600080B52 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8229D91C253274C800080B52 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		8229D91F25327AEA00080B52 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		8229D9222532996B00080B52 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
+		8229D9262532A12400080B52 /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +95,8 @@
 		8229D90025325BEF00080B52 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8229D90125325C0300080B52 /* CombineVC.swift */,
+				8229D90125325C0300080B52 /* CombineViewController.swift */,
+				8229D9262532A12400080B52 /* MatchViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -100,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				8229D9052532630A00080B52 /* CombineCardView.swift */,
+				8229D9222532996B00080B52 /* Loading.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -202,7 +208,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8229D91425326EB000080B52 /* UserService.swift in Sources */,
-				8229D90225325C0300080B52 /* CombineVC.swift in Sources */,
+				8229D9272532A12400080B52 /* MatchViewController.swift in Sources */,
+				8229D90225325C0300080B52 /* CombineViewController.swift in Sources */,
 				8229D8F025325B2200080B52 /* ViewController.swift in Sources */,
 				8229D9062532630A00080B52 /* CombineCardView.swift in Sources */,
 				8229D90F253268A700080B52 /* UILabel.swift in Sources */,
@@ -211,6 +218,7 @@
 				8229D8EC25325B2200080B52 /* AppDelegate.swift in Sources */,
 				8229D92025327AEA00080B52 /* UIButton.swift in Sources */,
 				8229D90B2532650800080B52 /* UIView.swift in Sources */,
+				8229D9232532996B00080B52 /* Loading.swift in Sources */,
 				8229D8EE25325B2200080B52 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
