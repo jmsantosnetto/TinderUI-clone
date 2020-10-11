@@ -20,6 +20,8 @@ class CombineCardView: UIView {
         }
     }
     
+    var onTapStackViewCallBack: ((User) -> Void)?
+    
     let photoImageView: UIImageView = .photoImageView()
     let likeImageView: UIImageView = .iconImageView(named: "card-like")
     let deslikeImageView: UIImageView = .iconImageView(named: "card-deslike")
@@ -79,9 +81,20 @@ class CombineCardView: UIView {
             padding: .init(top: 0, left: 16, bottom: 16, right: 16)
         )
         
+        let stackViewTapGesture = UITapGestureRecognizer(target: self, action: #selector(onTapUserInfo))
+        stackView.isUserInteractionEnabled = true
+        stackView.addGestureRecognizer(stackViewTapGesture)
+        
     }
     
     required init?(coder: NSCoder) {
-        fatalError()
+        fatalError("init(coder:) has not been implemented")
     }
+    
+    @objc func onTapUserInfo() {
+        if let user = self.user {
+            self.onTapStackViewCallBack?(user)
+        }
+    }
+
 }

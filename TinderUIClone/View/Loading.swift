@@ -43,6 +43,10 @@ class Loading: UIView {
         self.animate()
     }
     
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     func animate() {
         UIView.animate(withDuration: 1.3, animations: {
             self.loadView.frame = CGRect(x: 0, y: 0, width: 250, height: 250)
@@ -58,9 +62,5 @@ class Loading: UIView {
             
             self.animate()
         }
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError()
     }
 }

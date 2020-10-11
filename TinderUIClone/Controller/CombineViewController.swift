@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum CardAction {
+enum Action {
     case like
     case superLike
     case deslike
@@ -91,6 +91,10 @@ class CombineViewController: UIViewController {
             card.user = user
             card.tag = user.id
             
+            card.onTapStackViewCallBack = { (data) in
+                self.viewDetails(user)
+            }
+            
             let gesture = UIPanGestureRecognizer()
             gesture.addTarget(self, action: #selector(handleCardAnimation))
             
@@ -98,6 +102,24 @@ class CombineViewController: UIViewController {
             
             view.insertSubview(card, at: 1)
         }
+    }
+    
+    func viewDetails(_ user: User) {
+        let detailsViewController = DetailsViewController()
+        detailsViewController.user = user
+        detailsViewController.modalPresentationStyle = .fullScreen
+        
+        detailsViewController.userActionCallback = { (user, action) in
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                if action == .like {
+                    self.onClickLike()
+                } else {
+                    self.onClickDeslike()
+                }
+            }
+        }
+        
+        self.present(detailsViewController, animated: true, completion: nil)
     }
     
     func verifyMatch(user: User) {
@@ -110,7 +132,7 @@ class CombineViewController: UIViewController {
         }
     }
     
-    func animateCard(rotationAngle: CGFloat, action: CardAction) {
+    func animateCard(rotationAngle: CGFloat, action: Action) {
         if let user = self.users.first {
             for view in self.view.subviews {
                 if view.tag == user.id {
