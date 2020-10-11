@@ -23,6 +23,13 @@
 		8229D92025327AEA00080B52 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D91F25327AEA00080B52 /* UIButton.swift */; };
 		8229D9232532996B00080B52 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D9222532996B00080B52 /* Loading.swift */; };
 		8229D9272532A12400080B52 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D9262532A12400080B52 /* MatchViewController.swift */; };
+		8290F360253385AF00BC35AD /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8290F35F253385AF00BC35AD /* DetailsViewController.swift */; };
+		8290F3632533935300BC35AD /* DetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8290F3622533935300BC35AD /* DetailHeaderView.swift */; };
+		8290F3672533951900BC35AD /* HeaderLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8290F3662533951900BC35AD /* HeaderLayout.swift */; };
+		8290F36A253398CD00BC35AD /* DetailProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8290F369253398CD00BC35AD /* DetailProfileCell.swift */; };
+		8290F36D25339EF900BC35AD /* DetailPhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8290F36C25339EF900BC35AD /* DetailPhotosCell.swift */; };
+		8290F3712533A20200BC35AD /* SlidePhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8290F3702533A20200BC35AD /* SlidePhotosViewController.swift */; };
+		8290F3742533A76F00BC35AD /* SlidePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8290F3732533A76F00BC35AD /* SlidePhotoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +51,13 @@
 		8229D91F25327AEA00080B52 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		8229D9222532996B00080B52 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		8229D9262532A12400080B52 /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
+		8290F35F253385AF00BC35AD /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		8290F3622533935300BC35AD /* DetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderView.swift; sourceTree = "<group>"; };
+		8290F3662533951900BC35AD /* HeaderLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderLayout.swift; sourceTree = "<group>"; };
+		8290F369253398CD00BC35AD /* DetailProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProfileCell.swift; sourceTree = "<group>"; };
+		8290F36C25339EF900BC35AD /* DetailPhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPhotosCell.swift; sourceTree = "<group>"; };
+		8290F3702533A20200BC35AD /* SlidePhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidePhotosViewController.swift; sourceTree = "<group>"; };
+		8290F3732533A76F00BC35AD /* SlidePhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidePhotoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +111,8 @@
 			children = (
 				8229D90125325C0300080B52 /* CombineViewController.swift */,
 				8229D9262532A12400080B52 /* MatchViewController.swift */,
+				8290F35F253385AF00BC35AD /* DetailsViewController.swift */,
+				8290F3702533A20200BC35AD /* SlidePhotosViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -105,7 +121,11 @@
 			isa = PBXGroup;
 			children = (
 				8229D9052532630A00080B52 /* CombineCardView.swift */,
+				8290F3622533935300BC35AD /* DetailHeaderView.swift */,
 				8229D9222532996B00080B52 /* Loading.swift */,
+				8290F369253398CD00BC35AD /* DetailProfileCell.swift */,
+				8290F36C25339EF900BC35AD /* DetailPhotosCell.swift */,
+				8290F3732533A76F00BC35AD /* SlidePhotoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -117,6 +137,7 @@
 				8229D90E253268A700080B52 /* UILabel.swift */,
 				8229D91C253274C800080B52 /* UIImageView.swift */,
 				8229D91F25327AEA00080B52 /* UIButton.swift */,
+				8290F3662533951900BC35AD /* HeaderLayout.swift */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -211,6 +232,8 @@
 				8229D9272532A12400080B52 /* MatchViewController.swift in Sources */,
 				8229D90225325C0300080B52 /* CombineViewController.swift in Sources */,
 				8229D8F025325B2200080B52 /* ViewController.swift in Sources */,
+				8290F3672533951900BC35AD /* HeaderLayout.swift in Sources */,
+				8290F3712533A20200BC35AD /* SlidePhotosViewController.swift in Sources */,
 				8229D9062532630A00080B52 /* CombineCardView.swift in Sources */,
 				8229D90F253268A700080B52 /* UILabel.swift in Sources */,
 				8229D91825326F1600080B52 /* User.swift in Sources */,
@@ -218,8 +241,13 @@
 				8229D8EC25325B2200080B52 /* AppDelegate.swift in Sources */,
 				8229D92025327AEA00080B52 /* UIButton.swift in Sources */,
 				8229D90B2532650800080B52 /* UIView.swift in Sources */,
+				8290F36A253398CD00BC35AD /* DetailProfileCell.swift in Sources */,
+				8290F360253385AF00BC35AD /* DetailsViewController.swift in Sources */,
 				8229D9232532996B00080B52 /* Loading.swift in Sources */,
+				8290F36D25339EF900BC35AD /* DetailPhotosCell.swift in Sources */,
 				8229D8EE25325B2200080B52 /* SceneDelegate.swift in Sources */,
+				8290F3742533A76F00BC35AD /* SlidePhotoCell.swift in Sources */,
+				8290F3632533935300BC35AD /* DetailHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
