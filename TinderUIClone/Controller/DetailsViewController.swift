@@ -59,7 +59,6 @@ class DetailsViewController: UICollectionViewController, UICollectionViewDelegat
     
     func addBackButton() {
         view.addSubview(backButton)
-        print(UIScreen.main.bounds.width)
         backButton.frame = CGRect(
             x: UIScreen.main.bounds.width - 69,
             y: UIScreen.main.bounds.height * 0.7 - 24,
