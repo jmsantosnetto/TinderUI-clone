@@ -27,7 +27,7 @@ class CombineViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.isHidden = true
-        view.backgroundColor = UIColor.systemGroupedBackground
+        view.backgroundColor = .white
         
         let loading = Loading(frame: view.frame)
         view.insertSubview(loading, at: 0)
