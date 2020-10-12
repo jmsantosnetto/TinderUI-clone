@@ -8,8 +8,8 @@
 import UIKit
 
 class DetailsViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
-    let cellId: String = "CellId"
-    let headerId: String = "HeaderId"
+    let cellId = "CellId"
+    let headerId = "HeaderId"
     let profileId = "profileId"
     let photosId = "photosId"
     
