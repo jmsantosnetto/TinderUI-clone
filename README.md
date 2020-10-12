@@ -7,6 +7,7 @@ The idea of this project is to evolve the organization of the code according to 
 
 **This app use:**
 
+    AutoLayout
     UIStackView
     UIImageView
     UIView
