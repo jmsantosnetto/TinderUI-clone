@@ -9,18 +9,13 @@
 /* Begin PBXBuildFile section */
 		8229D8EC25325B2200080B52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D8EB25325B2200080B52 /* AppDelegate.swift */; };
 		8229D8EE25325B2200080B52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D8ED25325B2200080B52 /* SceneDelegate.swift */; };
-		8229D8F025325B2200080B52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D8EF25325B2200080B52 /* ViewController.swift */; };
 		8229D8F325325B2200080B52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8229D8F125325B2200080B52 /* Main.storyboard */; };
 		8229D8F525325B2400080B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8229D8F425325B2400080B52 /* Assets.xcassets */; };
 		8229D8F825325B2400080B52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8229D8F625325B2400080B52 /* LaunchScreen.storyboard */; };
 		8229D90225325C0300080B52 /* CombineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D90125325C0300080B52 /* CombineViewController.swift */; };
 		8229D9062532630A00080B52 /* CombineCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D9052532630A00080B52 /* CombineCardView.swift */; };
-		8229D90B2532650800080B52 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D90A2532650800080B52 /* UIView.swift */; };
-		8229D90F253268A700080B52 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D90E253268A700080B52 /* UILabel.swift */; };
 		8229D91425326EB000080B52 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D91325326EB000080B52 /* UserService.swift */; };
 		8229D91825326F1600080B52 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D91725326F1600080B52 /* User.swift */; };
-		8229D91D253274C800080B52 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D91C253274C800080B52 /* UIImageView.swift */; };
-		8229D92025327AEA00080B52 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D91F25327AEA00080B52 /* UIButton.swift */; };
 		8229D9232532996B00080B52 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D9222532996B00080B52 /* Loading.swift */; };
 		8229D9272532A12400080B52 /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8229D9262532A12400080B52 /* MatchViewController.swift */; };
 		8290F360253385AF00BC35AD /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8290F35F253385AF00BC35AD /* DetailsViewController.swift */; };
@@ -30,25 +25,21 @@
 		8290F36D25339EF900BC35AD /* DetailPhotosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8290F36C25339EF900BC35AD /* DetailPhotosCell.swift */; };
 		8290F3712533A20200BC35AD /* SlidePhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8290F3702533A20200BC35AD /* SlidePhotosViewController.swift */; };
 		8290F3742533A76F00BC35AD /* SlidePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8290F3732533A76F00BC35AD /* SlidePhotoCell.swift */; };
+		82C696EF25AAA8290018CF6D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C696EE25AAA8290018CF6D /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8229D8E825325B2200080B52 /* TinderUIClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderUIClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8229D8EB25325B2200080B52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8229D8ED25325B2200080B52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8229D8EF25325B2200080B52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8229D8F225325B2200080B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8229D8F425325B2400080B52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8229D8F725325B2400080B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8229D8F925325B2400080B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8229D90125325C0300080B52 /* CombineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineViewController.swift; sourceTree = "<group>"; };
 		8229D9052532630A00080B52 /* CombineCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineCardView.swift; sourceTree = "<group>"; };
-		8229D90A2532650800080B52 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
-		8229D90E253268A700080B52 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		8229D91325326EB000080B52 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		8229D91725326F1600080B52 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		8229D91C253274C800080B52 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
-		8229D91F25327AEA00080B52 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		8229D9222532996B00080B52 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		8229D9262532A12400080B52 /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
 		8290F35F253385AF00BC35AD /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +49,7 @@
 		8290F36C25339EF900BC35AD /* DetailPhotosCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPhotosCell.swift; sourceTree = "<group>"; };
 		8290F3702533A20200BC35AD /* SlidePhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidePhotosViewController.swift; sourceTree = "<group>"; };
 		8290F3732533A76F00BC35AD /* SlidePhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidePhotoCell.swift; sourceTree = "<group>"; };
+		82C696EE25AAA8290018CF6D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,23 +82,19 @@
 		8229D8EA25325B2200080B52 /* TinderUIClone */ = {
 			isa = PBXGroup;
 			children = (
-				8229D91625326ECB00080B52 /* Model */,
-				8229D91225326E6F00080B52 /* Service */,
-				8229D909253264D800080B52 /* Lib */,
+				82C696E925AAA7DD0018CF6D /* Application */,
+				8229D91625326ECB00080B52 /* Entities */,
+				8229D91225326E6F00080B52 /* Services */,
+				8229D909253264D800080B52 /* Classes */,
 				8229D904253262F300080B52 /* View */,
-				8229D90025325BEF00080B52 /* Controller */,
-				8229D8EB25325B2200080B52 /* AppDelegate.swift */,
-				8229D8ED25325B2200080B52 /* SceneDelegate.swift */,
-				8229D8EF25325B2200080B52 /* ViewController.swift */,
+				8229D90025325BEF00080B52 /* Controllers */,
 				8229D8F125325B2200080B52 /* Main.storyboard */,
-				8229D8F425325B2400080B52 /* Assets.xcassets */,
-				8229D8F625325B2400080B52 /* LaunchScreen.storyboard */,
 				8229D8F925325B2400080B52 /* Info.plist */,
 			);
 			path = TinderUIClone;
 			sourceTree = "<group>";
 		};
-		8229D90025325BEF00080B52 /* Controller */ = {
+		8229D90025325BEF00080B52 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				8229D90125325C0300080B52 /* CombineViewController.swift */,
@@ -114,7 +102,7 @@
 				8290F35F253385AF00BC35AD /* DetailsViewController.swift */,
 				8290F3702533A20200BC35AD /* SlidePhotosViewController.swift */,
 			);
-			path = Controller;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		8229D904253262F300080B52 /* View */ = {
@@ -130,32 +118,48 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		8229D909253264D800080B52 /* Lib */ = {
+		8229D909253264D800080B52 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8229D90A2532650800080B52 /* UIView.swift */,
-				8229D90E253268A700080B52 /* UILabel.swift */,
-				8229D91C253274C800080B52 /* UIImageView.swift */,
-				8229D91F25327AEA00080B52 /* UIButton.swift */,
-				8290F3662533951900BC35AD /* HeaderLayout.swift */,
+				82C696F525AAA89D0018CF6D /* UI */,
+				82C696EE25AAA8290018CF6D /* Extensions.swift */,
 			);
-			path = Lib;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		8229D91225326E6F00080B52 /* Service */ = {
+		8229D91225326E6F00080B52 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				8229D91325326EB000080B52 /* UserService.swift */,
 			);
-			path = Service;
+			path = Services;
 			sourceTree = "<group>";
 		};
-		8229D91625326ECB00080B52 /* Model */ = {
+		8229D91625326ECB00080B52 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
 				8229D91725326F1600080B52 /* User.swift */,
 			);
-			path = Model;
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		82C696E925AAA7DD0018CF6D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8229D8EB25325B2200080B52 /* AppDelegate.swift */,
+				8229D8ED25325B2200080B52 /* SceneDelegate.swift */,
+				8229D8F425325B2400080B52 /* Assets.xcassets */,
+				8229D8F625325B2400080B52 /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		82C696F525AAA89D0018CF6D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8290F3662533951900BC35AD /* HeaderLayout.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,21 +235,17 @@
 				8229D91425326EB000080B52 /* UserService.swift in Sources */,
 				8229D9272532A12400080B52 /* MatchViewController.swift in Sources */,
 				8229D90225325C0300080B52 /* CombineViewController.swift in Sources */,
-				8229D8F025325B2200080B52 /* ViewController.swift in Sources */,
 				8290F3672533951900BC35AD /* HeaderLayout.swift in Sources */,
 				8290F3712533A20200BC35AD /* SlidePhotosViewController.swift in Sources */,
 				8229D9062532630A00080B52 /* CombineCardView.swift in Sources */,
-				8229D90F253268A700080B52 /* UILabel.swift in Sources */,
 				8229D91825326F1600080B52 /* User.swift in Sources */,
-				8229D91D253274C800080B52 /* UIImageView.swift in Sources */,
 				8229D8EC25325B2200080B52 /* AppDelegate.swift in Sources */,
-				8229D92025327AEA00080B52 /* UIButton.swift in Sources */,
-				8229D90B2532650800080B52 /* UIView.swift in Sources */,
 				8290F36A253398CD00BC35AD /* DetailProfileCell.swift in Sources */,
 				8290F360253385AF00BC35AD /* DetailsViewController.swift in Sources */,
 				8229D9232532996B00080B52 /* Loading.swift in Sources */,
 				8290F36D25339EF900BC35AD /* DetailPhotosCell.swift in Sources */,
 				8229D8EE25325B2200080B52 /* SceneDelegate.swift in Sources */,
+				82C696EF25AAA8290018CF6D /* Extensions.swift in Sources */,
 				8290F3742533A76F00BC35AD /* SlidePhotoCell.swift in Sources */,
 				8290F3632533935300BC35AD /* DetailHeaderView.swift in Sources */,
 			);

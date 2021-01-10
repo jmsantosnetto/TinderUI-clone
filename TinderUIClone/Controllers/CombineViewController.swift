@@ -39,11 +39,9 @@ class CombineViewController: UIViewController {
     func findUsers() {
         UserService.instance.findUsers{ (users, err) in
             if let users = users {
-                DispatchQueue .main .async {
-                    self.users = users
-                    self.addCards()
-                    self.addFooter()
-                }
+                self.users = users
+                self.addCards()
+                self.addFooter()
             }
         }
     }
@@ -184,7 +182,7 @@ class CombineViewController: UIViewController {
     }
     
     @objc func onClickDeslike() {
-     self.animateCard(rotationAngle: 0.4, action: .deslike)
+     animateCard(rotationAngle: 0.4, action: .deslike)
     }
     
     @objc func handleCardAnimation(_ gesture: UIPanGestureRecognizer) {

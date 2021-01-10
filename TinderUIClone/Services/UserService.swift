@@ -34,9 +34,10 @@ class UserService {
   ]
   
     func findUsers (completion: @escaping ([User]?, Error?) -> ()) {
-    
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-            completion(self.users, nil)
+        DispatchQueue.global().asyncAfter(deadline: .now() + 1.5) {
+            DispatchQueue.main.async {
+                completion(self.users, nil)
+            }
         }
   }
 }
